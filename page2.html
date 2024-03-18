@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS SA</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('img/lab.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Pixelify Sans', sans-serif;
+      color: white; 
+      overflow-y: hidden;
+      position: relative; 
+    }
+    table {
+      width: 100%; 
+      height: 100%;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+    td {
+      text-align: center; 
+      vertical-align: middle; 
+    }
+    img {
+      max-width: 100%; 
+      height: auto; 
+      transition: transform 0.3s ease;
+    }
+    a {
+      text-decoration: none; 
+      color: inherit;
+    }
+    img:hover {
+      transform: scale(1.1); 
+    }
+    .home-link {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      scale: 1.5;
+    }
+  </style>
+</head>
+<body>
+    <div class="home-link"><a href="index.html"><img src="img/arrow.png" alt="ahha"></a></div>
+    <table>
+        <tr>
+            <td>
+                <a href="page2.html">
+                    <img src="img/game.png" alt="jd" id="image1">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="DP.html">
+                    <img src="img/DP.png" alt="jasd" id="image2">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="page2.html">
+                    <img src="img/3.png" alt="sh" id="image3">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+      document.getElementById("image1").addEventListener("mouseover", function() {
+        this.src = "img/again.png"; 
+      });
+      document.getElementById("image1").addEventListener("mouseout", function() {
+        this.src = "img/game.png"; 
+      });
+
+      document.getElementById("image2").addEventListener("mouseover", function() {
+        this.src = "img/againn.png"; 
+      });
+      document.getElementById("image2").addEventListener("mouseout", function() {
+        this.src = "img/DP.png"; 
+      });
+
+      document.getElementById("image3").addEventListener("mouseover", function() {
+        this.src = "img/6.png";
+      });
+      document.getElementById("image3").addEventListener("mouseout", function() {
+        this.src = "img/3.png"; 
+      });
+    </script>
+</body>
+</html>

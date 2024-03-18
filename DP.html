@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/pre.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Pixelify Sans, sans-serif;
+            font-size: 15px;
+            color: #fffefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow-y: hidden;
+        }
+        .header {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            margin-top: 100px; 
+        }
+        .game-char {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            font-size: 3em;
+            text-align: center;
+        }
+        .game-char img {
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            background-color: #3498db;
+        }
+        .game-char p {
+             margin-top: 10px;
+        }
+        .game-text {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .cheat-sheet {
+             position: absolute;
+            bottom: 1em;
+            right: 1em;
+            width: 300px;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            border-radius: 1em;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="page2.html">Homepage</a>
+        <a href="GB.html">Game Description and Cheat Sheet</a>
+    </div>
+    <div class="header">Welcome to the Laboratory</div>
+    <div class="game-container">
+        <div class="game-char">
+            <img src="img/jaii.png" alt="Character 1">
+            <p>Jaila Galang</p>
+        </div>
+        <div class="game-char">
+            <img src="img/evan.png" alt="Character 2">
+            <p>Evan Agaton</p>
+        </div>
+        <div class="game-char">
+            <img src="img/ashie.png" alt="Character 3">
+            <p>Ash Pamoceno</p>
+        </div>
+    </div>
+</body>
+</html>
